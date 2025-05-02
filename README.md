@@ -59,9 +59,9 @@ This project is currently **unlicensed**. All rights reserved by the author.
 
 ## Contact
 
-- 📧 Email: [ashraf.jamal.652@gmail.com](https://gmail.com/)
+- 📧 Email: [ddhruv166@gmail.com](https://gmail.com/)
 - 🐦 Twitter: [@sitesentry](#)
-- 💻 GitHub: [@Ashraf2543](https://github.com/Ashraf2543)
+- 💻 GitHub: [@dhruv-990](https://github.com/dhruv-990)
 
 ---
 
