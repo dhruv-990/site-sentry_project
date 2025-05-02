@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <h3>Time Spent on Websites</h3>
+        <label class="dark-mode-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div id="timeList"></div>
+    <div id="totalTime">Total Time: 0s</div>
+    <button id="clearDataBtn">Clear Data</button>
+    <button id="pauseTrackingBtn">Pause Tracking</button>
+    <button id="exportToExcelBtn">Export to Excel</button>
+    <script src="popup.js"></script>
+</body>
+</html>

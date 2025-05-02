@@ -1,0 +1,206 @@
+/* General styling */
+body {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+body.dark-mode #timeList {
+    background: #444;
+}
+
+body.dark-mode .site {
+    background: #555;
+    color: #fff;
+}
+
+body.dark-mode #totalTime {
+    background: #666;
+    color: #fff;
+}
+
+body.dark-mode button {
+    background: #555;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background: #777;
+}
+
+/* Heading styling */
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Time list container */
+#timeList {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Individual time entry styling */
+.site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 6px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+/* Icons */
+.site img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Text styling */
+.site span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Time text alignment */
+.site .site-time {
+    text-align: right;
+    margin-left: 10px;
+}
+
+/* Total Time styling */
+#totalTime {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+/* Button styling */
+button {
+    background: #727D73;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #eed537;
+}
+
+#pauseTrackingBtn:hover {
+    background: #aa0829;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 5px; 
+}
+
+.header h3 {
+    color: #333; 
+    margin: 0;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+body.dark-mode .header h3 {
+    color: #fff; 
+}
+
+/* Dark mode toggle switch */
+.dark-mode-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+}
+
+.dark-mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "☀️";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    content: "🌙";
+    transform: translateX(34px);
+    background-color: #333;
+    color: white;
+}
+
+/* Optional: Add a subtle glow effect when checked */
+input:checked + .slider {
+    box-shadow: 0 0 5px #2196F3;
+}
